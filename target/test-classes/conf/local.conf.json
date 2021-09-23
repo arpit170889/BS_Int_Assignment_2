@@ -1,0 +1,30 @@
+{
+
+  "server": "hub-cloud.browserstack.com",
+  "user": "arpitagrawal_f35bt7",
+  "key": "4ELY3ye1ELy1WUaW5uJo",
+
+  "capabilities": {
+
+    "build": "browserstack-build-1",
+    "name": "local_test",
+    "browserstack.debug": true,
+    "browserstack.local": true
+  },
+
+"environments": {
+    "chrome": {
+      "browser": "chrome"
+    },
+    "firefox": {
+      "browser": "firefox"
+    },
+    "safari": {
+      "os": "OS X",
+      "browser": "safari"
+    },
+    "ie": {
+      "browser": "internet explorer"
+    }
+}
+}

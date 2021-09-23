@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Local]">
+  <parameter name="environment" value="safari"/>
+  <parameter name="config" value="local.conf.json"/>
+  <test name="LocalTest">
+    <parameter name="environment" value="chrome"/>
+    <parameter name="config" value="local.conf.json"/>
+    <classes>
+      <class name="com.demo.test.DemoTest"/>
+    </classes>
+  </test> <!-- LocalTest -->
+  <test name="LocalTest2">
+    <parameter name="environment" value="firefox"/>
+    <parameter name="config" value="local.conf.json"/>
+    <classes>
+      <class name="com.demo.test.DemoTest"/>
+    </classes>
+  </test> <!-- LocalTest2 -->
+  <test name="LocalTest3">
+    <parameter name="environment" value="safari"/>
+    <parameter name="config" value="local.conf.json"/>
+    <classes>
+      <class name="com.demo.test.DemoTest"/>
+    </classes>
+  </test> <!-- LocalTest3 -->
+  <test name="LocalTest(failed)">
+    <parameter name="environment" value="chrome"/>
+    <parameter name="config" value="local.conf.json"/>
+    <classes>
+      <class name="com.demo.test.DemoTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.demo.test.DemoTest -->
+    </classes>
+  </test> <!-- LocalTest(failed) -->
+  <test name="LocalTest2(failed)">
+    <parameter name="environment" value="firefox"/>
+    <parameter name="config" value="local.conf.json"/>
+    <classes>
+      <class name="com.demo.test.DemoTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.demo.test.DemoTest -->
+    </classes>
+  </test> <!-- LocalTest2(failed) -->
+  <test name="LocalTest3(failed)">
+    <parameter name="environment" value="safari"/>
+    <parameter name="config" value="local.conf.json"/>
+    <classes>
+      <class name="com.demo.test.DemoTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.demo.test.DemoTest -->
+    </classes>
+  </test> <!-- LocalTest3(failed) -->
+</suite> <!-- Failed suite [Local] -->
